@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    box-shadow: -5px 10px 10px 3px rgba(0, 0, 0, 0.1);
+    background-color:#f0faff;
+    border-radius: 20px;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+
+.image img{
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -11%);
+}
+
+.forms{
+    background: white;
+    border-radius: 15px;
+    margin-right: 55px;
+    box-shadow: -5px 10px 10px 3px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    height: 63vh;
+}
+
+
+.form--2{
+    margin-left: 25px;
+}
+
+.form--3{
+    margin-left: 10px;
+}
+
+h1{
+    color: white;
+    background-color: #4a98f7c2;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #083a77;
+}
+
+select{
+    width: 200px;
+    height: 35px;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: grey;
+}
+
+input{
+    width: 200px;
+    height: 35px;
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+::placeholder{
+    padding: 1px;
+}
+
+.botao button{
+    display: block;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: white;
+}
+
+.botao button a{
+    text-decoration: none;
+    color: #0099ff;
+    font-weight: bolder;
+}
+
+.botao button:hover{
+    background-color: #4a98f762;
+    transition: 0.4s;
+}
+
+.form{
+    display: block;
+    padding: 10px;
+}

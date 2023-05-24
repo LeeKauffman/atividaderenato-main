@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil | PSafe</title>
+    <link rel="stylesheet" href="../estilos/style-home.css" />
+    <link rel="shortcut icon" href="../img/icons8-escudo-com-fechadura-40.png" type="image/x-icon">
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../estilos/style-cadasForm.css">
+
+  </head>
+  <body>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="../index.html" class="logo"><img src="../img/logomarca.png" alt="" srcset=""></a>
+
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li>
+                    <div class="menu">
+                        <span class="material-symbols-outlined">home</span>
+                        <a href="../index.html">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <a href="perfil.html">Meu perfil</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <span class="material-symbols-outlined">sell</span>
+                        <a href="../html/produtos.html">Produtos</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <span class="material-symbols-outlined">info</span>
+                        <a href="../html/sobre.html">Sobre Nós</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <span class="material-symbols-outlined">call</span>
+                        <a href="../html/contato.html">Contato</a>
+                    </div>
+                </li>
+            </ul>
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Pesquisar" />
+            </div>
+        </nav>
+        <section>
+            <div class="profile-info">
+                <img id="photo-perfil" src="../img/perfil.png" alt="" srcset="">
+                <h1 id="perfil">
+                    Olá, 
+                    seja bem-vindo(a) ao PSafe <br>*Finalize seu cadastro para começar a vender seus produtos
+                </h1>
+            </div>
+            <div class="formulario">
+                <form>
+                    <h1>Informações adicionais</h1>
+                    <div class="campo">
+                        <label for="nome">*Nome completo: </label>
+                        <input type="text" placeholder="Digite seu nome completo" name="nome" required>
+                    </div>
+            
+                    <div class="sexos">
+                        <div id="sex">
+                            <label for="sexo">Sexo:</label><br>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="radio" id="masculino" name="sexo" value="M">
+                                <label for="masculino">Masculino</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="feminino" name="sexo" value="F">
+                                <label for="feminino">Feminino</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="outros" name="sexo" value="O">
+                                <label for="outros">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="data">*Data de nascimento: </label>
+                        <input type="date" name="data" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cpf">*CPF: </label>
+                        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido no formato xxx.xxx.xxx-xx" required>
+                    </div>
+                    <div class="est">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado">
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="endereco">*Endereço: </label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua/Av, Nº, complemento, Bairro" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cep">*CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder=" 12345-678" required>
+                    </div>
+                    <div class="Finalizar">
+                        <button><a href='produtos.html'>Finalizar</a> </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script>
+                const nav = document.querySelector(".nav"),
+                searchIcon = document.querySelector("#searchIcon"),
+                navOpenBtn = document.querySelector(".navOpenBtn"),
+                navCloseBtn = document.querySelector(".navCloseBtn");
+
+            searchIcon.addEventListener("click", () => {
+                nav.classList.toggle("openSearch");
+                nav.classList.remove("openNav");
+                if (nav.classList.contains("openSearch")) {
+                    return searchIcon.classList.replace("uil-search", "uil-times");
+                }
+                searchIcon.classList.replace("uil-times", "uil-search");
+            });
+
+            navOpenBtn.addEventListener("click", () => {
+                nav.classList.add("openNav");
+                nav.classList.remove("openSearch");
+                searchIcon.classList.replace("uil-times", "uil-search");
+            });
+            navCloseBtn.addEventListener("click", () => {
+                nav.classList.remove("openNav");
+            });
+        </script>
+  </body>
+</html>

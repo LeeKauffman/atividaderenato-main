@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: block;
+    margin-left: 90%;
+    margin-top: 3vh;
+}
+
+.logo img {
+    width: 160px;
+}
+
+@media (max-width:600px) {
+    .form-pagamento{
+        margin: 2vw;
+    }
+    
+}
+
+.btn-primary{
+    margin-top: 5%;
+    width: 100%;
+}
+
+
+
+.descricao-pagamento{
+    display: block;
+    margin-left: 10vw;
+    margin-top: 120px;
+    width: 70%;
+}
+
+.descricao-pagamento h4{
+    color: rgb(140, 140, 140);
+}
+
+
+.descricao-pagamento h3 small{
+    color: black;
+    font-size: 18px;
+}
+
+.form-pagamento{
+
+    margin-top: 8vh;
+    -webkit-box-shadow: -8px 5px 15px 5px #c7c7c7;
+    box-shadow: -8px 5px 15px 5px #c7c7c7;
+    padding: 30px 30px 80px 30px;
+    width: 60%;
+}
+
+.form-pagamento form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-100{width: 100vw; margin-bottom: 10px;}
+.form-50{width: 100vw; display: flex; margin-bottom: 10px;}
+
+.form-pagamento label{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.form-pagamento input[type=text]{
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+}
